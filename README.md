@@ -4,6 +4,8 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 ## TensorFlow.js
 
+[Demo](https://codepen.io/hchiam/pen/LYYRLzz) based on a [smashingmagazine.com tutorial](https://www.smashingmagazine.com/2019/09/machine-learning-front-end-developers-tensorflowjs).
+
 <https://www.tensorflow.org/js>
 
 Example using TensorFlow.js in a Chrome extension: 
