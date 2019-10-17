@@ -1,6 +1,8 @@
 # Learning TensorFlow
 
-# TensorFlow Lite
+Just one of the things I'm learning. <https://github.com/hchiam/learning>
+
+## TensorFlow Lite
 
 <https://youtu.be/Jjm7MT6W0Dc?t=510>
 
