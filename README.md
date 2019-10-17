@@ -2,11 +2,11 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-## Tensorflow.js
+## TensorFlow.js
 
 <https://www.tensorflow.org/js>
 
-Example using Tensorflow.js in a Chrome extension: 
+Example using TensorFlow.js in a Chrome extension: 
 
 <https://github.com/tensorflow/tfjs-examples/tree/master/chrome-extension>
 
