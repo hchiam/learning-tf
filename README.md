@@ -16,6 +16,8 @@ Example using TensorFlow.js in a Chrome extension:
 
 <https://www.tensorflow.org/lite/models>
 
+<https://www.udacity.com/course/intro-to-tensorflow-lite--ud190>
+
 ## Other Repos for Further Reference
 
 <https://github.com/hchiam/tensorflow.js_explained>
