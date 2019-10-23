@@ -2,31 +2,9 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-## TensorFlow.js
+## [TensorFlow.js](https://github.com/hchiam/learning-tensorflow/tree/master/js)
 
-[Demo](https://codepen.io/hchiam/pen/LYYRLzz) based on a [smashingmagazine.com tutorial](https://www.smashingmagazine.com/2019/09/machine-learning-front-end-developers-tensorflowjs).
-
-<https://www.tensorflow.org/js>
-
-Example using TensorFlow.js in a Chrome extension: 
-
-<https://github.com/tensorflow/tfjs-examples/tree/master/chrome-extension>
-
-## TensorFlow Lite
-
-<https://youtu.be/Jjm7MT6W0Dc?t=510>
-
-<https://www.tensorflow.org/lite/models>
-
-<https://www.udacity.com/course/intro-to-tensorflow-lite--ud190>
-
-**Lesson 2** – Introduction to TensorFlow Lite *-> I plan to go through this*
-
-**Lesson 3** – TF Lite on Android *-> I plan to go through this*
-
-**Lesson 4** – TF Lite on iOS with Swift *(-> I might skip this)*
-
-**Lesson 5** – TF Lite on IoT *-> I plan to go through this*
+## [TensorFlow Lite](https://github.com/hchiam/learning-tensorflow/tree/master/lite)
 
 ## Other Repos for Further Reference
 

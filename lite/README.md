@@ -1,5 +1,11 @@
 # TensorFlow Lite
 
+<https://youtu.be/Jjm7MT6W0Dc?t=510>
+
+<https://www.tensorflow.org/lite/models>
+
+<https://www.udacity.com/course/intro-to-tensorflow-lite--ud190>
+
 **Lesson 2** – Introduction to TensorFlow Lite *-> I plan to go through this*
 
 **Lesson 3** – TF Lite on Android *-> I plan to go through this*
