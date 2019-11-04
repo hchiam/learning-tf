@@ -14,11 +14,14 @@ Example using TensorFlow.js in a Chrome extension:
 
 ## Basic **Voice/Sound** Detection
 
+[My live demo](https://tfjs-glitch-starter-howard.glitch.me/)
+) on Glitch.com
+
+[One-file code example](https://github.com/hchiam/learning-tensorflow/blob/master/js/sound-control-example.html).
+
 Google Codelab walk-through + [Glitch.com starter code](https://glitch.com/~tfjs-glitch-starter):
 
 <https://codelabs.developers.google.com/codelabs/tensorflowjs-audio-codelab>
-
-[My example on Glitch.com](https://tfjs-glitch-starter-howard.glitch.me/)
 
 ## **Offline** Predictions in a Web App
 
