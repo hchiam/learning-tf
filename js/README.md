@@ -20,6 +20,6 @@ Google Codelab walk-through + Glitch.com starter code:
 
 ## **Offline** Predictions in a Web App
 
-Dev.to glog tutorial:
+Dev.to blog tutorial:
 
 <https://dev.to/dar5hak/implementing-machine-learning-for-the-offline-web-with-tensorflowjs-46i>
