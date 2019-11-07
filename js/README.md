@@ -20,4 +20,4 @@ Example using [TensorFlow.js in a Chrome extension](https://github.com/tensorflo
 
 ## **Offline** Predictions in a Web App
 
-[Dev.to](https://dev.to/dar5hak/implementing-machine-learning-for-the-offline-web-with-tensorflowjs-46i) blog tutorial:
+[Dev.to](https://dev.to/dar5hak/implementing-machine-learning-for-the-offline-web-with-tensorflowjs-46i) blog tutorial.
