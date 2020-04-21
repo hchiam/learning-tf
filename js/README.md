@@ -2,6 +2,10 @@
 
 <https://www.tensorflow.org/js>
 
+## Text Similarity Test
+
+[GitHub code with link to CodePen demo](https://github.com/hchiam/text-similarity-test)
+
 ## Basic **Voice/Sound** Detection
 
 [My live demo](https://tfjs-glitch-starter-howard.glitch.me/) on Glitch.
