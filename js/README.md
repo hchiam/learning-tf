@@ -16,7 +16,7 @@
 
 ## Basic **Image** Recognition
 
-[Demo](https://codepen.io/hchiam/pen/LYYRLzz) based on a [smashingmagazine.com  blogtutorial](https://www.smashingmagazine.com/2019/09/machine-learning-front-end-developers-tensorflowjs).
+[Demo](https://codepen.io/hchiam/pen/LYYRLzz) based on a [smashingmagazine.com blogtutorial](https://www.smashingmagazine.com/2019/09/machine-learning-front-end-developers-tensorflowjs).
 
 ## Object Detection with a **Chrome Extension**
 
@@ -25,3 +25,9 @@ Example using [TensorFlow.js in a Chrome extension](https://github.com/tensorflo
 ## **Offline** Predictions in a Web App
 
 [Dev.to](https://dev.to/dar5hak/implementing-machine-learning-for-the-offline-web-with-tensorflowjs-46i) blog tutorial.
+
+## Further learning
+
+https://www.tensorflow.org/resources/learn-ml/basics-of-tensorflow-for-js-development
+
+https://www.coursera.org/professional-certificates/tensorflow-in-practice
