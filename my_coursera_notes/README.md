@@ -76,7 +76,7 @@ model.fit(train_images, train_labels, epochs=5, callbacks=callbacks) # run 5x ma
 model = keras.Sequential([
   # detect features:
   keras.layers.Conv2D(64, (3,3), activation='relu', # 64 = 64 filters
-                      input_shape=(28,28,1))
+                      input_shape=(28,28,1)),
   keras.layers.MaxPool2D(2,2),
   # detect higher-level features:
   keras.layers.Conv2D(64, (3,3), activation='relu'), # 64 = 64 filters
@@ -91,4 +91,16 @@ model = keras.Sequential([
 model.summary() # prints out layer types and shapes/sizes
 # note that convolution layer shapes will be smaller because filters can't reach outside of the bounds of the image
 # ...
+```
+
+```py
+def reshape_and_normalize(images):
+  # images array is already 3D because it's a list of images, but
+  # add "1" for extra dimension for RGB:
+  images = np.reshape(images, (len(images), len(images[0]), len(images[0][0]), 1))
+
+  # normalize to 0-1 range:
+  images = images / 255.0
+
+  return images
 ```
