@@ -73,7 +73,7 @@ model.fit(train_images, train_labels, epochs=5, callbacks=callbacks) # run 5x ma
 
 ```py
 # ...
-model = keras.Sequential([
+model = keras.models.Sequential([
   # detect features:
   keras.layers.Conv2D(64, (3,3), activation='relu', # 64 = 64 filters
                       input_shape=(28,28,1)),
