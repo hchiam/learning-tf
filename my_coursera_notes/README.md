@@ -69,7 +69,7 @@ model.compile(optimizer='adam',
 model.fit(train_images, train_labels, epochs=5, callbacks=callbacks) # run 5x max, unless hit threshold loss on_epoch_end
 ```
 
-## image recognition of Fashion MNIST using convolution and pooling
+## less-naive image recognition of Fashion MNIST using convolution and pooling
 
 ```py
 # ...
@@ -103,4 +103,81 @@ def reshape_and_normalize(images):
   images = images / 255.0
 
   return images
+```
+
+## more realistic binary classification image recognition using Keras ImageDataGenerator to generate images
+
+- realistic images don't have perfectly-same-scaled views of objects filling their images in the center
+- make sure to make `flow_from_directory` point to `/training` and not to `/training/label-name-1`
+  - folders: `/training`
+  - folders: `/training/label-name-1`
+  - folders: `/training/label-name-2`
+  - folders: `/validation`
+  - folders: `/validation/label-name-1`
+  - folders: `/validation/label-name-2`
+
+```py
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+train_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_directory(
+  train_dir, # /training folder, not /training/label-name-1
+  target_size=(300,300), # will need to match this number later
+  batch_size=128, # will need this number later
+  class_mode='binary'
+)
+
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+validation_generator = test_datagen.flow_from_directory(
+  validation_dir, # /validation folder, not /validation/label-name-1
+  target_size=(300,300), # will need to match this number later
+  batch_size=32, # will need this number later
+  class_mode='binary'
+)
+```
+
+```py
+# ...
+model = keras.models.Sequential([
+  # detect features:
+  keras.layers.Conv2D(16, (3,3), activation='relu', # 16 = 16 filters
+                      input_shape=(300,300,3)), # 3 for RGB, 300x300 from generator
+  keras.layers.MaxPool2D(2,2),
+  # detect higher-level features:
+  keras.layers.Conv2D(32, (3,3), activation='relu'), # 32 = 32 filters
+  keras.layers.MaxPool2D(2,2),
+  # detect higher-higher-level features:
+  keras.layers.Conv2D(64, (3,3), activation='relu'), # 64 = 64 filters
+  keras.layers.MaxPool2D(2,2),
+
+  # similar DNN layers as before:
+  keras.layers.Flatten(),
+  keras.layers.Dense(128, activation=tf.nn.relu),
+  keras.layers.Dense(1,  activation=tf.nn.sigmoid), # if doing binary classification
+])
+
+model.summary() # prints out layer types and shapes/sizes
+# note that convolution layer shapes will be smaller because filters can't reach outside of the bounds of the image
+# ...
+```
+
+```py
+from tensorflow.keras.optimizers import RMSprop # lets you play with learning rate
+
+# ...
+
+model.compile(optimizer=RMSprop(lr=0.001),
+              loss='binary_crossentropy',
+              metric=['accuracy'])
+
+history = model.fit(
+  train_generator, # (see generator code snippet above)
+  steps_per_epoch=8, # 8 = 1028 images in training folder / 128 batch_size from train_generator
+  epochs=15,
+  validation_data=validation_generator, # (see generator code snippet above)
+  validation_steps=8, # 8 = 256 images in validation folder / 32 batch_size from validation_generator
+  verbose=2
+)
 ```
