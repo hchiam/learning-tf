@@ -5,7 +5,7 @@
 - slides: https://community.deeplearning.ai/t/tf1-course-1-lecture-notes/124222
 
 - **DNN** = Deep Neural Network
-- **ConvNet** = Convolutional neural Network
+- **CNN** or **ConvNet** = Convolutional neural Network
 
 - **convolution** = filtering image to emphasize useful features like vertical lines (example of convolution: [`keras.layers.Conv2D`](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D))
 
