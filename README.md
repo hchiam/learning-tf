@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
+## [TensorFlow (in Python/Colab) intro on Coursera](https://github.com/hchiam/learning-tensorflow/tree/master/my_coursera_notes)
+
 ## [TensorFlow.js](https://github.com/hchiam/learning-tensorflow/tree/master/js)
 
 ## [TensorFlow Lite](https://github.com/hchiam/learning-tensorflow/tree/master/lite)
