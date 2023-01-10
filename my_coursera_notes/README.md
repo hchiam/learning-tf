@@ -1,4 +1,4 @@
-# My notes for a Coursera course
+# My notes for DeepLearning.AI / Coursera course - intro to TF for AI/ML/DL
 
 - course: https://www.coursera.org/learn/introduction-tensorflow
 
@@ -187,6 +187,10 @@ history = model.fit(
 )
 ```
 
-## Next step
+## Next steps
 
-https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
+C2: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
+
+C3: ?
+
+C4: ?
