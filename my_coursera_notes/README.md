@@ -186,3 +186,7 @@ history = model.fit(
   verbose=2
 )
 ```
+
+## Next step
+
+https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
