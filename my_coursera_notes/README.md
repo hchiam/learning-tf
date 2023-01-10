@@ -6,6 +6,9 @@
 
 - companion repo: https://github.com/https-deeplearning-ai/tensorflow-1-public/tree/main/C1
 
+- my own notes from another crash course:
+  https://github.com/hchiam/machineLearning/blob/master/more_notes/googleMLCrashCourse.md
+
 - **DNN** = Deep Neural Network
 - **CNN** or **ConvNet** = Convolutional neural Network
 
