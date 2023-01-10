@@ -4,6 +4,8 @@
 
 - slides: https://community.deeplearning.ai/t/tf1-course-1-lecture-notes/124222
 
+- companion repo: https://github.com/https-deeplearning-ai/tensorflow-1-public/tree/main/C1
+
 - **DNN** = Deep Neural Network
 - **CNN** or **ConvNet** = Convolutional neural Network
 
