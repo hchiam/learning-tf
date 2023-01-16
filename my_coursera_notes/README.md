@@ -6,6 +6,8 @@
 
 - companion repo: https://github.com/https-deeplearning-ai/tensorflow-1-public/tree/main/C1
 
+- discussion forum: https://community.deeplearning.ai/c/tf1/tf1-course-2/80
+
 - my own notes from another crash course:
   https://github.com/hchiam/machineLearning/blob/master/more_notes/googleMLCrashCourse.md
 
