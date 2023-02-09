@@ -193,6 +193,6 @@ history = model.fit(
 
 C2: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
 
-C3: ?
+C3: https://www.coursera.org/learn/natural-language-processing-tensorflow
 
 C4: ?
