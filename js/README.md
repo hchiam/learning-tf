@@ -6,6 +6,10 @@
 
 [GitHub code with link to CodePen demo](https://github.com/hchiam/text-similarity-test)
 
+## t-SNE and visualization powered by [`tfjs-tsne`](https://github.com/hchiam/tfjs-tsne) and [`tfjs-vis`](https://github.com/hchiam/tfjs-vis)
+
+https://github.com/hchiam/learning-tfjs-tsne
+
 ## Basic **Voice/Sound** Detection
 
 [My live demo](https://tfjs-glitch-starter-howard.glitch.me/) on Glitch.
