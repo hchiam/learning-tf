@@ -195,4 +195,4 @@ C2: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
 
 C3: https://www.coursera.org/learn/natural-language-processing-tensorflow
 
-C4: ?
+C4: https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
