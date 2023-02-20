@@ -4,7 +4,7 @@
 
 - slides: https://community.deeplearning.ai/t/tf1-course-1-lecture-notes/124222
 
-- companion repo: https://github.com/https-deeplearning-ai/tensorflow-1-public/tree/main/C1
+- companion repo: https://github.com/https-deeplearning-ai/tensorflow-1-public/tree/main/C1 - Jupyter notebooks not rendering for you on GitHub? Try https://nbviewer.org
 
 - discussion forum: https://community.deeplearning.ai/c/tf1/tf1-course-2/80
 
