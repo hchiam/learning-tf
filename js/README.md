@@ -45,3 +45,5 @@ Course: https://www.coursera.org/learn/browser-based-models-tensorflow?specializ
 Course repo: https://github.com/https-deeplearning-ai/tensorflow-2-public/tree/main/C1_Browser-based-TF-JS
 
 Course forum: https://community.deeplearning.ai/c/tf2/tf2-course-1/141
+
+Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment-course-1-lecture-notes/61289/3
