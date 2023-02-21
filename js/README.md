@@ -40,6 +40,8 @@ https://www.coursera.org/professional-certificates/tensorflow-in-practice
 
 ## Coursera
 
-https://www.coursera.org/learn/browser-based-models-tensorflow?specialization=tensorflow-data-and-deployment
+Course: https://www.coursera.org/learn/browser-based-models-tensorflow?specialization=tensorflow-data-and-deployment
 
-https://github.com/https-deeplearning-ai/tensorflow-2-public/tree/main/C1_Browser-based-TF-JS
+Course repo: https://github.com/https-deeplearning-ai/tensorflow-2-public/tree/main/C1_Browser-based-TF-JS
+
+Course forum: https://community.deeplearning.ai/c/tf2/tf2-course-1/141
