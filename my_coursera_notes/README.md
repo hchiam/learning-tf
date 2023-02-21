@@ -201,6 +201,7 @@ https://github.com/hchiam/learning-pycharm
 
 For the TF cert exam:
 
+- https://www.tensorflow.org/certificate
 - https://www.tensorflow.org/static/extras/cert/TF_Certificate_Candidate_Handbook.pdf
 - https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf
 - https://www.jetbrains.com/help/pycharm/installation-guide.html
