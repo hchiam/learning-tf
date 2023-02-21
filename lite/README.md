@@ -29,3 +29,7 @@ pip3 install tf-nightly-2.0-preview
 ```
 
 - (train ->) model -> convert to `.tflite` model -> save
+
+## Coursera
+
+https://www.coursera.org/learn/device-based-models-tensorflow?specialization=tensorflow-data-and-deployment

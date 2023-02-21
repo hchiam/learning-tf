@@ -35,3 +35,7 @@ Example using [TensorFlow.js in a Chrome extension](https://github.com/tensorflo
 https://www.tensorflow.org/resources/learn-ml/basics-of-tensorflow-for-js-development
 
 https://www.coursera.org/professional-certificates/tensorflow-in-practice
+
+## Coursera
+
+https://www.coursera.org/learn/browser-based-models-tensorflow?specialization=tensorflow-data-and-deployment
