@@ -1,5 +1,7 @@
 # TensorFlow Lite
 
+Lets you run models in mobile applications and low-powered devices.
+
 <https://youtu.be/Jjm7MT6W0Dc?t=510>
 
 <https://www.tensorflow.org/lite/models>
