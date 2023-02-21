@@ -196,3 +196,11 @@ C2: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
 C3: https://www.coursera.org/learn/natural-language-processing-tensorflow
 
 C4: https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
+
+https://github.com/hchiam/learning-pycharm
+
+For the TF cert exam:
+
+- https://www.tensorflow.org/static/extras/cert/TF_Certificate_Candidate_Handbook.pdf
+- https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf
+- https://www.jetbrains.com/help/pycharm/installation-guide.html
