@@ -47,3 +47,39 @@ Course repo: https://github.com/https-deeplearning-ai/tensorflow-2-public/tree/m
 Course forum: https://community.deeplearning.ai/c/tf2/tf2-course-1/141
 
 Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment-course-1-lecture-notes/61289/3
+
+`tfjs` should use close to the APIs that Python uses in `tensorflow.keras`.
+
+````html
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+  <script>
+    const model = tf.sequential();
+    model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
+    model.compile({ loss: "meanSquaredError", optimizer: "sgd" });
+    model.summary(); // 2 params b/c y=mx+b has both m and b = weight and bias
+
+    // we don't have numpy in js, so instead of np.array we have to use tf.tensor2d:
+    const xs = tf.tensor2d([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], [6, 1]); // size: 6 x 1
+    const ys = tf.tensor2d([-3.0, -1.0, 2.0, 3.0, 5.0, 7.0], [6, 1]);
+
+    doTraining(model).then(() => {
+      alert(model.predict(tf.tensor2d([10], [1, 1])));
+    });
+
+    async function doTraining(model) {
+      const history = await model.fit(xs, ys, {
+        epochs: 500,
+        callbacks: {
+          onEpochEnd: async (epoch, logs) => {
+            console.log(`Epoch: ${epoch} Loss: ${logs.loss}`);
+          },
+        },
+      });
+    }
+  </script>
+</body>
+```
+````
