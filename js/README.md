@@ -48,7 +48,7 @@ Course forum: https://community.deeplearning.ai/c/tf2/tf2-course-1/141
 
 Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment-course-1-lecture-notes/61289/3
 
-`tfjs` should use close to the APIs that Python uses in `tensorflow.keras`.
+`tfjs` should use mostly familiar APIs similar to what Python uses in `tensorflow.keras`.
 
 ````html
 <head>
