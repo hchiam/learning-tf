@@ -205,3 +205,4 @@ For the TF cert exam:
 - https://www.tensorflow.org/static/extras/cert/TF_Certificate_Candidate_Handbook.pdf
 - https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf
 - https://www.jetbrains.com/help/pycharm/installation-guide.html
+- https://plugins.jetbrains.com/plugin/13812-tensorflow-developer-certificate/versions
