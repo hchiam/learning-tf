@@ -8,6 +8,8 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 ## [TensorFlow Lite](https://github.com/hchiam/learning-tensorflow/tree/master/lite)
 
+## [TensorFlow.NET (C#)](https://github.com/hchiam/learning-tensorflow/tree/master/csharp)
+
 ## Quickly leverage existing models
 
 <https://tfhub.dev>
