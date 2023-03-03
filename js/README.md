@@ -8,7 +8,11 @@ Run models in the browser.
 
 [GitHub code with link to CodePen demo](https://github.com/hchiam/text-similarity-test)
 
-## t-SNE and visualization powered by [`tfjs-tsne`](https://github.com/hchiam/tfjs-tsne) and [`tfjs-vis`](https://github.com/hchiam/tfjs-vis)
+## UMAP visualization powered by [`umap-js`](https://github.com/PAIR-code/umap-js#umap-js) and [`chart.js`](https://github.com/chartjs/Chart.js)
+
+https://github.com/hchiam/learning-tfjs-umap
+
+## t-SNE visualization powered by [`tfjs-tsne`](https://github.com/hchiam/tfjs-tsne) and [`tfjs-vis`](https://github.com/hchiam/tfjs-vis)
 
 https://github.com/hchiam/learning-tfjs-tsne
 
