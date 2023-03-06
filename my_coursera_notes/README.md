@@ -1,5 +1,10 @@
 # My notes for DeepLearning.AI / Coursera course - intro to TF for AI/ML/DL
 
+- TF = TensorFlow
+- AI = Artificial Intelligence
+- ML = Machine Learning
+- DL = Deep Learning
+
 - course: https://www.coursera.org/learn/introduction-tensorflow
 
 - slides: https://community.deeplearning.ai/t/tf1-course-1-lecture-notes/124222
@@ -14,9 +19,13 @@
 - **DNN** = Deep Neural Network
 - **CNN** or **ConvNet** = Convolutional neural Network
 
-- **convolution** = filtering image to emphasize useful features like vertical lines (example of convolution: [`keras.layers.Conv2D`](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D))
+- **convolution** = filtering image to emphasize useful features with certain sets of numerical "filters", for example like an image filter that emphasizes vertical lines (example of convolution: [`keras.layers.Conv2D`](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D))
 
-- **pooling** = compressing image data while detecting regions with features detected by convolution (example of pooling: [`keras.layers.MaxPool2D`](https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D))
+- **pooling** = compressing image data while detecting regions with features detected by convolution (example of pooling: [`keras.layers.MaxPool2D`](https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D)) - which can help with detecting whether a feature was detected in a larger location/area of an image (at the cost of precision of the location of detection)
+
+- my own notes from other resources:
+  - https://github.com/hchiam/machineLearning/blob/master/more_notes/misnomersAndConfusingTerms.md
+  - https://github.com/hchiam/machineLearning/blob/master/more_notes/googleMLCrashCourse.md
 
 ## simple mapping of x -> y with a single layer with one neuron
 
@@ -191,11 +200,11 @@ history = model.fit(
 
 ## Next steps
 
-[C2](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C2.md).md: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
+Course #2: [C2](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C2.md).md: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
 
-[C3](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C3.md).md: https://www.coursera.org/learn/natural-language-processing-tensorflow
+Course #3: [C3](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C3.md).md: https://www.coursera.org/learn/natural-language-processing-tensorflow
 
-[C4](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C4.md).md: https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
+Course #4: [C4](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C4.md).md: https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
 
 https://github.com/hchiam/learning-pycharm
 
@@ -205,4 +214,3 @@ For the TF cert exam:
 - https://www.tensorflow.org/static/extras/cert/TF_Certificate_Candidate_Handbook.pdf
 - https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf
 - https://www.jetbrains.com/help/pycharm/installation-guide.html
-- https://plugins.jetbrains.com/plugin/13812-tensorflow-developer-certificate/versions
