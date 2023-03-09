@@ -20,7 +20,7 @@ https://github.com/hchiam/learning-tfjs-tsne
 
 [My live demo](https://tfjs-glitch-starter-howard.glitch.me/) on Glitch.
 
-[One-file code example](https://github.com/hchiam/learning-tensorflow/blob/master/js/sound-control-example.html) on GitHub.
+[One-file code example](https://github.com/hchiam/learning-tf/blob/master/js/sound-control-example.html) on GitHub.
 
 [Google Codelab walk-through](https://codelabs.developers.google.com/codelabs/tensorflowjs-audio-codelab) + [Glitch.com starter code](https://glitch.com/~tfjs-glitch-starter):
 

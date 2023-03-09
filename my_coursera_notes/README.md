@@ -200,11 +200,11 @@ history = model.fit(
 
 ## Next steps
 
-Course #2: [C2](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C2.md).md: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
+Course #2: [C2](https://github.com/hchiam/learning-tf/blob/main/my_coursera_notes/C2.md).md: https://www.coursera.org/learn/convolutional-neural-networks-tensorflow
 
-Course #3: [C3](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C3.md).md: https://www.coursera.org/learn/natural-language-processing-tensorflow
+Course #3: [C3](https://github.com/hchiam/learning-tf/blob/main/my_coursera_notes/C3.md).md: https://www.coursera.org/learn/natural-language-processing-tensorflow
 
-Course #4: [C4](https://github.com/hchiam/learning-tensorflow/blob/main/my_coursera_notes/C4.md).md: https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
+Course #4: [C4](https://github.com/hchiam/learning-tf/blob/main/my_coursera_notes/C4.md).md: https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
 
 https://github.com/hchiam/learning-pycharm
 
