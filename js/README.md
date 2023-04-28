@@ -88,6 +88,10 @@ Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment
 ```
 ````
 
+## YouTube course - Machine Learning for Web Developers (Web ML)
+
+https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
+
 ## Quickly use pre-trained TensorFlow.js models in the browser
 
 For example, it's only a few lines of code to do Q&A of text using MobileBERT: https://github.com/tensorflow/tfjs-models/tree/master/qna
