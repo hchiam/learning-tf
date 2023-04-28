@@ -92,6 +92,12 @@ Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment
 
 https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 
+Example:
+
+3.1 Pre-trained models - easy set up: https://youtu.be/iTlj3gMYzw8?t=84
+
+3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
+
 ## Quickly use pre-trained TensorFlow.js models in the browser
 
 For example, it's only a few lines of code to do Q&A of text using MobileBERT: https://github.com/tensorflow/tfjs-models/tree/master/qna
