@@ -97,6 +97,7 @@ Example:
 3.1 Pre-trained models - easy set up: https://youtu.be/iTlj3gMYzw8?t=84
 
 3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
+- problem -> consider a variety of existing model types -> narrow down models by comparison and user needs -> inference speed, file size, runtime memory usage from documentation or from DevTools analysis; and also usage environment (internet speed, device, etc.)
 
 ## Quickly use pre-trained TensorFlow.js models in the browser
 
