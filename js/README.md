@@ -99,6 +99,8 @@ Example:
 3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
 - problem -> consider a variety of existing model types -> narrow down models by comparison and user needs -> inference speed, file size, runtime memory usage from documentation or from DevTools analysis; and also usage environment (internet speed, device, etc.)
 
+3.5 note: don't forget to dispose of memory! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
+
 ## Quickly use pre-trained TensorFlow.js models in the browser
 
 For example, it's only a few lines of code to do Q&A of text using MobileBERT: https://github.com/tensorflow/tfjs-models/tree/master/qna
