@@ -99,7 +99,7 @@ Example:
 3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
 - problem -> consider a variety of existing model types -> narrow down models by comparison and user needs -> inference speed, file size, runtime memory usage from documentation or from DevTools analysis; and also usage environment (internet speed, device, etc.)
 
-3.5 note: don't forget to dispose of memory! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
+3.5 note: to avoid memory leaks, don't forget to dispose of memory! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
   - 4.4.2 note: `tf.tidy(function() {})` can automatically dispose non-returned tensors for you, but the `function` you pass to `tf.tidy` cannot be `async` https://www.youtube.com/watch?v=_m_ih8lXLvU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=26
 
 4.2 note: training data set (to train models) -> validation data set (to choose which model to use) -> testing data set (as a final step, not "seen" before, to avoid models _indirectly_ being "trained" on the validation data set) https://www.youtube.com/watch?v=e5jNQ5TeK6E&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=22
