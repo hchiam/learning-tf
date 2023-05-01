@@ -103,6 +103,8 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 
 (The following are highlights of notes for myself, given that I've already taken related Coursera courses https://github.com/hchiam/learning-tf/tree/main/my_coursera_notes)
 
+- tip: search the tf js API before trying to do something manually, like one-hot encoding `tf.oneHot`: https://js.tensorflow.org/api/latest/
+
 3.1 Pre-trained models - easy set up: https://youtu.be/iTlj3gMYzw8?t=84
 
 3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
