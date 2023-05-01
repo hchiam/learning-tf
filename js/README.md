@@ -126,3 +126,5 @@ Example:
     - `.squeeze()` is the opposite of `.expandDims()`
 
 4.7.1/4.7.2 note: usually pair `.conv2d()` with `.maxPooling2d()` to extract patterns in a position-independent way, while keeping information, while improving performance, since convolutional layers tend to create a lot of connections https://www.youtube.com/watch?v=lfTHBA-qpXU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=32 / https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
+
+4.7.2 note: dropout layers can help a neural network pick up on the patterns that always/commonly matter, instead of one-off patterns, and random drop-out is commonly set to 50% or 25% https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
