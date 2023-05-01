@@ -115,4 +115,7 @@ Example:
 4.6.2 note: reminders https://www.youtube.com/watch?v=48GnPgVGUKs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=31
   - **softmax** makes sure the layer's neurons' outputs add up to 1 (100%), which is great for classification (one-hot)
   - **adam** optimizer automatically changes the learning rate over time
-  - **trial and error and experience** will guide you on the number of layers and neurons (and hence connections) to use for a given problem and size
+  - **trial and error and experience** will guide you on the number of layers and neurons (and hence connections) to use
+    - for a given problem and size
+    - for your given problem
+    - for the best weighing of factors to consider like model memory size, accuracy, speed, etc.
