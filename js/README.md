@@ -110,7 +110,7 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
 - problem -> consider a variety of existing model types -> narrow down models by comparison and user needs -> inference speed, file size, runtime memory usage from documentation or from DevTools analysis; and also usage environment (internet speed, device, etc.)
 
-3.5 note: to avoid memory leaks, don't forget to dispose of memory when you're done training! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
+3.5 note: to avoid memory leaks, don't forget to dispose of memory when you're done training or want to retrain! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
   - 4.4.2 note: `returnValue = tf.tidy(function() {})` can automatically dispose non-returned tensors for you, but the `function` you pass to `tf.tidy` cannot be `async` https://www.youtube.com/watch?v=_m_ih8lXLvU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=26
   - 4.4.3 note: `console.log(tf.memory().numTensors)` to check if you `.dispose()`-ed everything https://www.youtube.com/watch?v=aJ2IM6iy8y0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=27 also btw, here's a demo of how to create a model from scratch if you need something custom: https://glitch.com/edit/#!/single-neuron-multi-input-linear-regression
 
@@ -143,4 +143,6 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
   - `const mostConfidentPrediction = prediction.arraySync()[indexOfMostConfidentPrediction];`
   - `window.requestAnimationFrame(predictionLoopCallback);` for better performance than a fixed `setTimeout` delay
 
-5.1 general tip: warm up large models for speed by passing `tf.zeros([1, ...])` through it once inside `tf.tidy` https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+5.1 general tips: https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+  - warm up large models for speed by passing `tf.zeros([1, ...])` through it once inside `tf.tidy`
+  - `array.splice(0)` to empty the array
