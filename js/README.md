@@ -99,7 +99,9 @@ Even more live demos on Glitch: https://glitch.com/@TensorFlowJS/official-tutori
 
 https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 
-Example:
+### Examples:
+
+(The following are highlights of notes for myself, given that I've already taken related Coursera courses https://github.com/hchiam/learning-tf/tree/main/my_coursera_notes)
 
 3.1 Pre-trained models - easy set up: https://youtu.be/iTlj3gMYzw8?t=84
 
