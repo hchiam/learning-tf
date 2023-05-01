@@ -130,3 +130,8 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 4.7.1/4.7.2 note: usually pair `.conv2d()` with `.maxPooling2d()` to extract patterns in a position-independent way, while keeping information, while improving performance, since convolutional layers tend to create a lot of connections https://www.youtube.com/watch?v=lfTHBA-qpXU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=32 / https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
 
 4.7.2 note: dropout layers can help a neural network pick up on the patterns that always/commonly matter, instead of one-off patterns, and random drop-out is commonly set to 50% or 25% https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
+
+5.1 Transfer learning https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+  - search for models at https://tfhub.dev/s?deployment-format=tfjs&network-architecture=mobilenet-v3
+    - "image feature vector" models are base models with their heads (final layers) already removed so you can add your own custom classification layers
+      - then don't forget to `model.save`
