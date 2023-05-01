@@ -124,3 +124,5 @@ Example:
     let output = model.predict(input.expandDims());
     ```
     - `.squeeze()` is the opposite of `.expandDims()`
+
+4.7.1 note: combine CNNs with maxpooling to extract patterns in a position-independent way https://www.youtube.com/watch?v=lfTHBA-qpXU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=32
