@@ -118,7 +118,7 @@ Example:
   - **trial and error and experience** will guide you on the number of layers and neurons (and hence connections) to use
     - for a given problem and size
     - for your given problem
-    - for the best weighing of factors to consider like model memory size, accuracy, speed, etc.
+    - for the best weighing of factors to consider like model memory size, prediction accuracy, prediction speed, etc.
   - `model.predict()` expects a tensor with a batch dimension specified (batch size can be of 1), so use `.expandDims()`:
     ```js
     let output = model.predict(input.expandDims());
