@@ -111,3 +111,8 @@ Example:
   - 4.4.3 note: `console.log(tf.memory().numTensors)` to check if you `.dispose()`-ed everything https://www.youtube.com/watch?v=aJ2IM6iy8y0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=27 also btw, here's a demo of how to create a model from scratch if you need something custom: https://glitch.com/edit/#!/single-neuron-multi-input-linear-regression
 
 4.2 note: training data set (to train models) -> validation data set (to choose which model to use) -> testing data set (as a final step, not "seen" before, to avoid models _indirectly_ being "trained" on the validation data set) https://www.youtube.com/watch?v=e5jNQ5TeK6E&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=22
+
+4.6.2 note: reminders https://www.youtube.com/watch?v=48GnPgVGUKs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=31
+  - **softmax** makes sure the layer's neurons' outputs add up to 1 (100%), which is great for classification (one-hot)
+  - **adam** optimizer automatically changes the learning rate over time
+  - **trial and error and experience** will guide you on the number of layers and neurons (and hence connections) to use for a given problem and size
