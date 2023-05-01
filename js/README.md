@@ -137,5 +137,10 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
   - search for models at https://tfhub.dev/s?deployment-format=tfjs&network-architecture=mobilenet-v3
     - "image feature vector" models are base models with their heads (final layers) already removed so you can add your own custom classification layers
       - then don't forget to `model.save`
+  - `const prediction = model.predict(inputTensor.expandDims()).squeeze();`
+    - (note: `inputTensor` could also be the output of a frozen base model you passed the actual input to for training the overall transfer model)
+  - `const indexOfMostConfidentPrediction = prediction.argMax().arraySync();`
+  - `const mostConfidentPrediction = prediction.arraySync()[indexOfMostConfidentPrediction];`
+  - `window.requestAnimationFrame(predictionLoopCallback);` for better performance than a fixed `setTimeout` delay
 
 5.1 general tip: warm up large models for speed by passing `tf.zeros([1, ...])` through it once inside `tf.tidy` https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
