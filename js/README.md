@@ -127,7 +127,7 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
     ```js
     let output = model.predict(input.expandDims());
     ```
-    - to un-batch and predict, use `.squeeze()`, the opposite of `.expandDims()`
+    - to then predict, "un-batch" by removing one dimension with `.squeeze()`, the opposite of `.expandDims()`
 
 4.7.1/4.7.2 note: usually pair `.conv2d()` with `.maxPooling2d()` to extract patterns in a position-independent way, while keeping information, while improving performance, since convolutional layers tend to create a lot of connections https://www.youtube.com/watch?v=lfTHBA-qpXU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=32 / https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
 
