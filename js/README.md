@@ -135,3 +135,5 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
   - search for models at https://tfhub.dev/s?deployment-format=tfjs&network-architecture=mobilenet-v3
     - "image feature vector" models are base models with their heads (final layers) already removed so you can add your own custom classification layers
       - then don't forget to `model.save`
+
+5.1 general tip: warm up large models for speed by passing `tf.zeros([1, ...])` through it once inside `tf.tidy` https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
