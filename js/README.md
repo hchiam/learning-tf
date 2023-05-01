@@ -119,3 +119,7 @@ Example:
     - for a given problem and size
     - for your given problem
     - for the best weighing of factors to consider like model memory size, accuracy, speed, etc.
+  - `model.predict()` expects a tensor with a batch dimension specified (batch size can be of 1), so do:
+    ```js
+    let output = model.predict(input.expandDims());
+    ```
