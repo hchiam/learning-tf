@@ -54,7 +54,7 @@ Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment
 
 `tfjs` should use mostly familiar APIs similar to what Python uses in `tensorflow.keras`.
 
-````html
+```html
 <head>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
 </head>
@@ -86,7 +86,14 @@ Course lecture notes: https://community.deeplearning.ai/t/tf-data-and-deployment
   </script>
 </body>
 ```
-````
+
+## Quickly use pre-trained TensorFlow.js models in the browser
+
+For example, it's only a few lines of code to do Q&A of text using MobileBERT: https://github.com/tensorflow/tfjs-models/tree/master/qna
+
+Live demo: https://storage.googleapis.com/tfjs-models/demos/mobilebert-qna/index.html
+
+Even more live demos on Glitch: https://glitch.com/@TensorFlowJS/official-tutorials-templates
 
 ## YouTube course - Machine Learning for Web Developers (Web ML)
 
@@ -104,11 +111,3 @@ Example:
   - 4.4.3 note: `console.log(tf.memory().numTensors)` to check if you `.dispose()`-ed everything https://www.youtube.com/watch?v=aJ2IM6iy8y0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=27 also btw, here's a demo of how to create a model from scratch if you need something custom: https://glitch.com/edit/#!/single-neuron-multi-input-linear-regression
 
 4.2 note: training data set (to train models) -> validation data set (to choose which model to use) -> testing data set (as a final step, not "seen" before, to avoid models _indirectly_ being "trained" on the validation data set) https://www.youtube.com/watch?v=e5jNQ5TeK6E&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=22
-
-## Quickly use pre-trained TensorFlow.js models in the browser
-
-For example, it's only a few lines of code to do Q&A of text using MobileBERT: https://github.com/tensorflow/tfjs-models/tree/master/qna
-
-Live demo: https://storage.googleapis.com/tfjs-models/demos/mobilebert-qna/index.html
-
-Even more live demos on Glitch: https://glitch.com/@TensorFlowJS/official-tutorials-templates
