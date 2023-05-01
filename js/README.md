@@ -101,6 +101,7 @@ Example:
 
 3.5 note: to avoid memory leaks, don't forget to dispose of memory! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
   - 4.4.2 note: `tf.tidy(function() {})` can automatically dispose non-returned tensors for you, but the `function` you pass to `tf.tidy` cannot be `async` https://www.youtube.com/watch?v=_m_ih8lXLvU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=26
+  - 4.4.3 note: `console.log(tf.memory().numTensors)` to check if you `.dispose()`-ed everything https://www.youtube.com/watch?v=aJ2IM6iy8y0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=27
 
 4.2 note: training data set (to train models) -> validation data set (to choose which model to use) -> testing data set (as a final step, not "seen" before, to avoid models _indirectly_ being "trained" on the validation data set) https://www.youtube.com/watch?v=e5jNQ5TeK6E&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=22
 
