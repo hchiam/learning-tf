@@ -93,7 +93,7 @@ For example, it's only a few lines of code to do Q&A of text using MobileBERT: h
 
 Live demo: https://storage.googleapis.com/tfjs-models/demos/mobilebert-qna/index.html
 
-Even more live demos on Glitch: https://glitch.com/@TensorFlowJS/official-tutorials-templates
+Even more templates and live demos on Glitch: https://glitch.com/@TensorFlowJS/official-tutorials-templates
 
 ## YouTube course - Machine Learning for Web Developers (Web ML)
 
