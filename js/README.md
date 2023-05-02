@@ -148,4 +148,8 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
   - `array.splice(0)` to empty the array
 
 5.3 Using layers models for transfer learning https://www.youtube.com/watch?v=PN4asCDITNg&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=36
+  - `const layer = model.getLayer('name_of_layer_from_model_summary');`
+  - `layer.trainable = false; // layer.trainable = true;`
+  - `const truncatedModel = tf.model({inputs: model.inputs, outputs: layer.output});`
+  - `const combinedModel = tf.sequential(); combinedModel.add(baseModel); combinedModel.add(model); combinedModel.compile({optimizer:'adam',loss:'categoricalCrossEntropy'}); combinedModel.summary(); await combinedModel.save('downloads://my-model'); ...`
   - also a general note: `model.summary(null, null, customPrint);`
