@@ -146,3 +146,6 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 5.1 general tips: https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
   - warm up large models for speed by passing `tf.zeros([1, ...])` through it once inside `tf.tidy`
   - `array.splice(0)` to empty the array
+
+5.3 Using layers models for transfer learning https://www.youtube.com/watch?v=PN4asCDITNg&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=36
+  - also a general note: `model.summary(null, null, customPrint);`
