@@ -157,3 +157,5 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 6.2 how to go from Python model to JS model, and also tips https://www.youtube.com/watch?v=EODze80347w&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=38
 
 6.3 note: for language model embeddings: `4thRoot(number of words) = number of dimensions to use` https://www.youtube.com/watch?v=KC3iHks7wFs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=39
+
+6.4.4 Using a natural language model: Comment spam detection - web sockets https://www.youtube.com/watch?v=bkcUhMn3rik&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=43
