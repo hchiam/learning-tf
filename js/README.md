@@ -154,8 +154,21 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
   - `const combinedModel = tf.sequential(); combinedModel.add(baseModel); combinedModel.add(model); combinedModel.compile({optimizer:'adam',loss:'categoricalCrossEntropy'}); combinedModel.summary(); await combinedModel.save('downloads://my-model'); ...`
   - also a general note: `model.summary(null, null, customPrint);`
 
-6.2 how to go from Python model to JS model, and also tips https://www.youtube.com/watch?v=EODze80347w&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=38
+6.2 how to convert from an existing Python model to a JS model, and also tips https://www.youtube.com/watch?v=EODze80347w&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=38
 
 6.3 note: for language model embeddings: `4thRoot(number of words) = number of dimensions to use` https://www.youtube.com/watch?v=KC3iHks7wFs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=39
 
 6.4.4 Using a natural language model: Comment spam detection - web sockets https://www.youtube.com/watch?v=bkcUhMn3rik&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=43
+
+6.5 tip: use python model maker in colab to retrain an exiting model on csv data, e.g. to account for special edge case examples https://www.youtube.com/watch?v=qxe3pWqgOwQ&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=44
+
+### Links to more to get started fast:
+
+- get boilerplate: https://glitch.com/@TensorFlowJS
+- get examples: https://github.com/tensorflow/tfjs-examples
+- get help: https://discuss.tensorflow.org/tag/tfjs
+- get models: https://tensorflow.org/js/models
+- get blog posts and docs and more: https://tensorflow.org/js
+- get the latest library updates: https://github.com/tensorflow/tfjs
+- see examples of realistic applications: https://goo.gle/made-with-tfjs
+- get inspiration: https://codepen.io/topic/tensorflow
