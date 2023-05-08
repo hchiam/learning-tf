@@ -164,11 +164,10 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 
 ### Links to more to get started fast:
 
-- get boilerplate: https://glitch.com/@TensorFlowJS
+- get boilerplates/templates to get started faster: https://codepen.io/topic/tensorflow or https://glitch.com/@TensorFlowJS
 - get examples: https://github.com/tensorflow/tfjs-examples
 - get help: https://discuss.tensorflow.org/tag/tfjs
 - get models: https://tensorflow.org/js/models
 - get blog posts and docs and more: https://tensorflow.org/js
 - get the latest library updates: https://github.com/tensorflow/tfjs
 - see examples of realistic applications: https://goo.gle/made-with-tfjs
-- get inspiration: https://codepen.io/topic/tensorflow
