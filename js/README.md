@@ -102,7 +102,12 @@ https://www.tensorflow.org/decision_forests/tf_df_in_tf_js
 2) **convert** model file to TensorFlow.js with **Python** in **Google Colab**
 3) **use** the TensorFlow.js model in **JavaScript** on the **web**
 
-https://www.youtube.com/watch?v=6DlWndLbk90
+https://www.youtube.com/watch?v=6DlWndLbk90 and https://ydf.readthedocs.io/en/latest/intro_df.html
+- decision forest avoids overfitting problem of one big decision tree
+- decision forests are great for tabular data, with highly interpretable results compared to neural networks
+- decision forests have less hyperparams = easier to train
+- decision forests are great as a first technique to try
+- decision forests are NOT great for images, texts, time series data, graph data (use a neural network instead)
 
 ## YouTube course - Machine Learning for Web Developers (Web ML)
 
