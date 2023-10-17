@@ -2,13 +2,13 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-## [TensorFlow (in Python/Colab) intro on Coursera](https://github.com/hchiam/learning-tf/tree/master/my_coursera_notes)
+## [TensorFlow (in Python/Colab) intro on Coursera](https://github.com/hchiam/learning-tf/tree/main/my_coursera_notes)
 
-## [TensorFlow.js](https://github.com/hchiam/learning-tf/tree/master/js)
+## [TensorFlow.js](https://github.com/hchiam/learning-tf/tree/main/js)
 
-## [TensorFlow Lite](https://github.com/hchiam/learning-tf/tree/master/lite)
+## [TensorFlow Lite](https://github.com/hchiam/learning-tf/tree/main/lite)
 
-## [TensorFlow.NET (C#)](https://github.com/hchiam/learning-tf/tree/master/csharp)
+## [TensorFlow.NET (C#)](https://github.com/hchiam/learning-tf/tree/main/csharp)
 
 ## Quickly leverage existing models
 
