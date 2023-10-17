@@ -95,6 +95,15 @@ Live demo: https://storage.googleapis.com/tfjs-models/demos/mobilebert-qna/index
 
 Even more templates and live demos on Glitch: https://glitch.com/@TensorFlowJS/official-tutorials-templates
 
+## Running TensorFlow Decision Forests models with TensorFlow.js
+
+https://www.tensorflow.org/decision_forests/tf_df_in_tf_js
+1) **train** and **export** model file with **Python** in **Google Colab**
+2) **convert** model file to TensorFlow.js with **Python** in **Google Colab**
+3) **use** the TensorFlow.js model in **JavaScript** on the **web**
+
+https://www.youtube.com/watch?v=6DlWndLbk90
+
 ## YouTube course - Machine Learning for Web Developers (Web ML)
 
 https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
