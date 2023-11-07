@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "npm run start",
+    "start": "bun index.tsx",
+    "surge": "npm run deploy",
+    "deploy": "surge dist http://decision-forest-demo.surge.sh/"
+  }
+}

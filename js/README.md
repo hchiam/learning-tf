@@ -98,20 +98,27 @@ Even more templates and live demos on Glitch: https://glitch.com/@TensorFlowJS/o
 ## Running TensorFlow Decision Forests models with TensorFlow.js
 
 My demo:
-1) I ran this code to get `tfjs_model.zip`: https://colab.research.google.com/drive/1UYDQfaINlDHrT_ng3OkQ6ck_iq4MYASX?usp=sharing (unzip the `.zip` file and use the `model.json`)
-2) Open this file in a browser to try it out: https://github.com/hchiam/learning-tf/blob/main/js/decision-forest-demo.html
+
+1. I ran this code to get `tfjs_model.zip`: https://colab.research.google.com/drive/1UYDQfaINlDHrT_ng3OkQ6ck_iq4MYASX?usp=sharing (unzip the `.zip` file and get the `model.json`)
+2. Open this file in a browser to try it out: https://github.com/hchiam/learning-tf/blob/main/js/decision-forest-demo/index.html
+   - `bun js/decision-forest-demo/index.html`
+   - http://localhost:3000/
+   - (see the console log output)
 
 https://www.tensorflow.org/decision_forests/tf_df_in_tf_js
-1) **train** and **export** model file with **Python** in **Google Colab**
-2) **convert** model file to TensorFlow.js with **Python** in **Google Colab**
-3) **use** the TensorFlow.js model in **JavaScript** on the **web**
+
+1. **train** and **export** model file with **Python** in **Google Colab**
+2. **convert** model file to TensorFlow.js with **Python** in **Google Colab**
+3. **use** the TensorFlow.js model in **JavaScript** on the **web**
 
 https://www.youtube.com/watch?v=5qgk9QJ4rdQ
+
 - to help interpret:
   - `tfdf.model_plotter.plot_model_in_colab(model)` to see the structure of one of the trees
   - `model.make_inspector().variable_importances()['MEAN_DECREASE_IN_ACCURACY']`
 
 https://www.youtube.com/watch?v=6DlWndLbk90 and https://ydf.readthedocs.io/en/latest/intro_df.html
+
 - decision forest avoids overfitting problem of one big decision tree
 - decision forests are great for tabular data, with highly interpretable results compared to neural networks
 - decision forests have less hyperparams = easier to train
@@ -128,18 +135,21 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 
 - tip: search the tf js API before trying to do something manually, like one-hot encoding `tf.oneHot`: https://js.tensorflow.org/api/latest/
 
-3.1 Pre-trained models - easy set up: https://youtu.be/iTlj3gMYzw8?t=84
+  3.1 Pre-trained models - easy set up: https://youtu.be/iTlj3gMYzw8?t=84
 
-3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
+  3.2 Selecting an ML model to use https://www.youtube.com/watch?v=MxgtqbPRjag&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=10
+
 - problem -> consider a variety of existing model types -> narrow down models by comparison and user needs -> inference speed, file size, runtime memory usage from documentation or from DevTools analysis; and also usage environment (internet speed, device, etc.)
 
-3.5 note: to avoid memory leaks, don't forget to dispose of memory when you're done training or want to retrain! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
+  3.5 note: to avoid memory leaks, don't forget to dispose of memory when you're done training or want to retrain! `input.dispose()` and `result.dispose()` but also more surprisingly `model.dispose()` https://www.youtube.com/watch?v=5QAO0mKFAKE&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=18
+
   - 4.4.2 note: `returnValue = tf.tidy(function() {})` can automatically dispose non-returned tensors for you, but the `function` you pass to `tf.tidy` cannot be `async` https://www.youtube.com/watch?v=_m_ih8lXLvU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=26
   - 4.4.3 note: `console.log(tf.memory().numTensors)` to check if you `.dispose()`-ed everything https://www.youtube.com/watch?v=aJ2IM6iy8y0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=27 also btw, here's a demo of how to create a model from scratch if you need something custom: https://glitch.com/edit/#!/single-neuron-multi-input-linear-regression
 
-4.2 note: training data set (to train models) -> validation data set (to choose which model to use) -> testing data set (as a final step, not "seen" before, to avoid models _indirectly_ being "trained" on the validation data set) https://www.youtube.com/watch?v=e5jNQ5TeK6E&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=22
+    4.2 note: training data set (to train models) -> validation data set (to choose which model to use) -> testing data set (as a final step, not "seen" before, to avoid models _indirectly_ being "trained" on the validation data set) https://www.youtube.com/watch?v=e5jNQ5TeK6E&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=22
 
-4.6.2 note: reminders https://www.youtube.com/watch?v=48GnPgVGUKs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=31
+    4.6.2 note: reminders https://www.youtube.com/watch?v=48GnPgVGUKs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=31
+
   - **softmax** makes sure the layer's neurons' outputs add up to 1 (100%), which is great for classification (one-hot)
   - **adam** optimizer automatically changes the learning rate over time
   - **trial and error and experience** will guide you on the number of layers and neurons (and hence connections) to use
@@ -147,16 +157,19 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
     - for your given problem
     - for the best weighing of factors to consider like model memory size, prediction accuracy, prediction speed, etc.
   - `model.predict()` expects a tensor with a batch dimension specified (batch size can be of 1), so use `.expandDims()`:
+
     ```js
     let output = model.predict(input.expandDims());
     ```
+
     - to then predict, "un-batch" by removing one dimension with `.squeeze()`, the opposite of `.expandDims()`
 
-4.7.1/4.7.2 note: usually pair `.conv2d()` with `.maxPooling2d()` to extract patterns in a position-independent way, while keeping information, while improving performance, since convolutional layers tend to create a lot of connections https://www.youtube.com/watch?v=lfTHBA-qpXU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=32 / https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
+      4.7.1/4.7.2 note: usually pair `.conv2d()` with `.maxPooling2d()` to extract patterns in a position-independent way, while keeping information, while improving performance, since convolutional layers tend to create a lot of connections https://www.youtube.com/watch?v=lfTHBA-qpXU&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=32 / https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
 
-4.7.2 note: dropout layers can help a neural network pick up on the patterns that always/commonly matter, instead of one-off patterns, and random drop-out is commonly set to 50% or 25% https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
+      4.7.2 note: dropout layers can help a neural network pick up on the patterns that always/commonly matter, instead of one-off patterns, and random drop-out is commonly set to 50% or 25% https://www.youtube.com/watch?v=-GxpuDee-a0&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=33
 
-5.1 Transfer learning https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+      5.1 Transfer learning https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+
   - search for models at https://tfhub.dev/s?deployment-format=tfjs&network-architecture=mobilenet-v3
     - "image feature vector" models are base models with their heads (final layers) already removed so you can add your own custom classification layers
       - then don't forget to `model.save`
@@ -166,24 +179,26 @@ https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
   - `const mostConfidentPrediction = prediction.arraySync()[indexOfMostConfidentPrediction];`
   - `window.requestAnimationFrame(predictionLoopCallback);` for better performance than a fixed `setTimeout` delay
 
-5.1 general tips: https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+    5.1 general tips: https://www.youtube.com/watch?v=x-YFBvSpqz4&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=34
+
   - warm up large models for speed by passing `tf.zeros([1, ...])` through it once inside `tf.tidy`
   - `array.splice(0)` to empty the array
 
-5.3 Using layers models for transfer learning https://www.youtube.com/watch?v=PN4asCDITNg&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=36
+    5.3 Using layers models for transfer learning https://www.youtube.com/watch?v=PN4asCDITNg&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=36
+
   - `const layer = model.getLayer('name_of_layer_from_model_summary');`
   - `layer.trainable = false; // layer.trainable = true;`
   - `const truncatedModel = tf.model({inputs: model.inputs, outputs: layer.output});`
   - `const combinedModel = tf.sequential(); combinedModel.add(baseModel); combinedModel.add(model); combinedModel.compile({optimizer:'adam',loss:'categoricalCrossEntropy'}); combinedModel.summary(); await combinedModel.save('downloads://my-model'); ...`
   - also a general note: `model.summary(null, null, customPrint);`
 
-6.2 how to convert from an existing Python model to a JS model, and also tips https://www.youtube.com/watch?v=EODze80347w&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=38
+    6.2 how to convert from an existing Python model to a JS model, and also tips https://www.youtube.com/watch?v=EODze80347w&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=38
 
-6.3 note: for language model embeddings: `4thRoot(number of words) = number of dimensions to use` https://www.youtube.com/watch?v=KC3iHks7wFs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=39
+    6.3 note: for language model embeddings: `4thRoot(number of words) = number of dimensions to use` https://www.youtube.com/watch?v=KC3iHks7wFs&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=39
 
-6.4.4 Using a natural language model: Comment spam detection - web sockets https://www.youtube.com/watch?v=bkcUhMn3rik&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=43
+    6.4.4 Using a natural language model: Comment spam detection - web sockets https://www.youtube.com/watch?v=bkcUhMn3rik&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=43
 
-6.5 tip: use python model maker in colab to retrain an exiting model on csv data, e.g. to account for special edge case examples https://www.youtube.com/watch?v=qxe3pWqgOwQ&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=44
+    6.5 tip: use python model maker in colab to retrain an exiting model on csv data, e.g. to account for special edge case examples https://www.youtube.com/watch?v=qxe3pWqgOwQ&list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui&index=44
 
 ### Links to more to get started fast:
 
