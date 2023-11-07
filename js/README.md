@@ -97,6 +97,10 @@ Even more templates and live demos on Glitch: https://glitch.com/@TensorFlowJS/o
 
 ## Running TensorFlow Decision Forests models with TensorFlow.js
 
+My demo:
+1) I ran this code to get `tfjs_model.zip`: https://colab.research.google.com/drive/1UYDQfaINlDHrT_ng3OkQ6ck_iq4MYASX?usp=sharing (unzip the `.zip` file and use the `model.json`)
+2) Open this file in a browser to try it out: https://github.com/hchiam/learning-tf/blob/main/js/decision-forest-demo.html
+
 https://www.tensorflow.org/decision_forests/tf_df_in_tf_js
 1) **train** and **export** model file with **Python** in **Google Colab**
 2) **convert** model file to TensorFlow.js with **Python** in **Google Colab**
