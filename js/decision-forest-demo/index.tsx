@@ -5,8 +5,11 @@ Bun.serve({
     if (url.pathname.endsWith("/") || url.pathname.endsWith("/index.html"))
       return new Response(Bun.file(import.meta.dir + "/index.html"));
 
-    if (url.pathname.endsWith("/model.json"))
-      return new Response(Bun.file(import.meta.dir + "/model.json"));
+    if (url.pathname.endsWith("/tfjs_model/model.json"))
+      return new Response(Bun.file(import.meta.dir + "/tfjs_model/model.json"));
+
+    if (url.pathname.endsWith("/tfjs_model/group1-shard1of1.bin"))
+      return new Response(Bun.file(import.meta.dir + "/tfjs_model/group1-shard1of1.bin"));
 
     // all other routes
     return new Response("Hello!");

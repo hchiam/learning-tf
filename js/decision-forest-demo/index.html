@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decision Forest Demo</title>
-    <link id="model" href="tfjs_model/model.json" />
   </head>
 
   <body>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.5.0/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tfdf/dist/tf-tfdf.min.js"></script>
     <script>
-      const modelPath =
-        location.href + document.querySelector("#model").getAttribute("href");
+      const modelPath = 'http://localhost:3000/tfjs_model/model.json';
       console.log(modelPath);
       (async () => {
         // Load the model.
