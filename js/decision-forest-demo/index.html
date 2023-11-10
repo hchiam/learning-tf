@@ -10,16 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.5.0/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tfdf/dist/tf-tfdf.min.js"></script>
     <script>
-      const modelPath = 'http://localhost:3000/tfjs_model/model.json';
-      console.log(modelPath);
       (async () => {
         // Load the model.
         // Tensorflow.js currently needs the absolute path to the model including the full origin.
-        const model = await tfdf.loadTFDFModel(
-          // "model.json"
-          // "https://drive.google.com/file/d/1lTPO55H1hT9fZU431RdnWcBT8BY5elQL"
-          modelPath
-        );
+        const modelPath = 'http://localhost:3000/tfjs_model/model.json';
+        const model = await tfdf.loadTFDFModel(modelPath);
         // Perform an inference
         const result = await model.executeAsync({
           island: tf.tensor(["Torgersen"]),
