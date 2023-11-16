@@ -13,7 +13,7 @@
       (async () => {
         // Load the model.
         // Tensorflow.js currently needs the absolute path to the model including the full origin.
-        const modelPath = 'http://localhost:3000/tfjs_model/model.json';
+        const modelPath = location.protocol + '//' + location.host + '/tfjs_model/model.json';
         const model = await tfdf.loadTFDFModel(modelPath);
         // Perform an inference
         const result = await model.executeAsync({
