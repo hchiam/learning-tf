@@ -97,7 +97,7 @@ Even more templates and live demos on Glitch: https://glitch.com/@TensorFlowJS/o
 
 ## Running TensorFlow Decision Forests models with TensorFlow.js
 
-My demo: https://github.com/hchiam/learning-tf/tree/main/js/decision-forest-demo-WORKING
+My demo: https://decision-forest-demo.surge.sh/ <-- https://github.com/hchiam/learning-tf/tree/main/js/decision-forest-demo-WORKING
 
 https://www.tensorflow.org/decision_forests/tf_df_in_tf_js
 

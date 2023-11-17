@@ -1,6 +1,8 @@
 # My (WORKING) demo of running a TensorFlow decision forest model with TensorFlow.js
 
-By combining
+Live demo: https://decision-forest-demo.surge.sh/
+
+Created by combining
 
 https://github.com/hchiam/decision-forests#usage-example
 

@@ -9,7 +9,17 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.5.0/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tfdf/dist/tf-tfdf.min.js"></script>
-    <button id="re_run">Re-run</button>
+    <div id="stay_up_top">
+      <p>
+        For more info:
+        <a
+          href="https://github.com/hchiam/learning-tf/tree/main/js/decision-forest-demo-WORKING"
+          target="_blank"
+          >https://github.com/hchiam/learning-tf/tree/main/js/decision-forest-demo-WORKING</a
+        >
+      </p>
+      <button id="re_run">Re-run:</button>
+    </div>
     <script id="main_script" contenteditable>
       (async () => {
         // Load the model.
@@ -46,6 +56,13 @@
       #main_script:hover,
       #main_script:focus {
         background: #dff1f7;
+      }
+      #stay_up_top {
+        position: sticky;
+        top: 0;
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
       }
     </style>
     <script>
