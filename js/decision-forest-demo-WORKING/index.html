@@ -20,7 +20,7 @@
       </p>
       <button id="re_run">Re-run:</button>
     </div>
-    <script id="main_script" contenteditable>
+    <script id="main_script" contenteditable="true" title="Shift+Enter to make a new line">
       (async () => {
         // Load the model.
         // Tensorflow.js currently needs the absolute path to the model including the full origin.
@@ -49,9 +49,13 @@
       })();
     </script>
     <style>
+      * {
+        font-family: Avenir, Arial, Helvetica, sans-serif;
+      }
       #main_script {
         display: block;
         white-space: pre;
+        font-family: monospace;
       }
       #main_script:hover,
       #main_script:focus {
