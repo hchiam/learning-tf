@@ -1,4 +1,4 @@
-# My demo of running a TensorFlow decision forest model with TensorFlow.js
+# My NOT-working demo of running a TensorFlow decision forest model with TensorFlow.js
 
 https://www.tensorflow.org/decision_forests/tf_df_in_tf_js
 
