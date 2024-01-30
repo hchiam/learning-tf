@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Forest Demo</title>
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.5.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tfdf/dist/tf-tfdf.min.js"></script>
+    <div id="stay_up_top">
+      <p>
+        For more info:
+        <a
+          href="https://github.com/hchiam/learning-tf/tree/main/js/decision-forest-demo-WORKING#my-working-demo-of-running-a-tensorflow-decision-forest-model-with-tensorflowjs"
+          target="_blank"
+          >https://github.com/hchiam/learning-tf/tree/main/js/decision-forest-demo-WORKING</a
+        >
+      </p>
+      <button id="re_run">Re-run:</button>
+    </div>
+    <script id="main_script" contenteditable="true" title="Shift+Enter to make a new line">
+      (async () => {
+        // Load the model.
+        // Tensorflow.js currently needs the absolute path to the model including the full origin.
+        // const model = await tfdf.loadTFDFModel('https://path/to/unzipped/model/model.json');
+        const model = await tfdf.loadTFDFModel(location.protocol + "//" + location.host + "/tfjs_model/model.json");
+        // Perform an inference
+        const result = await model.executeAsync({
+          "island": tf.tensor(["Torgersen"]),
+          "bill_length_mm": tf.tensor([39.1]),
+          "bill_depth_mm": tf.tensor([17.3]),
+          "flipper_length_mm": tf.tensor([3.1]),
+          "body_mass_g": tf.tensor([1000.0]),
+          "sex": tf.tensor(["Female"]),
+          "year": tf.tensor([2007], [1], 'int32'),
+        });
+        // The result is a 6-dimensional vector, the first half may be ignored
+        result.print(); // [[0, 0, 0, 0.9933325, 0.0066667, 0],]
+      
+        // Get predicted class
+        const maxIndex = tf.argMax(result, (axis = 1));
+        const predictedClassIndex = (await maxIndex.array()) - 3; // ignore the first 3 indices
+        const labelClasses = ["Adelie", "Gentoo", "Chinstrap"];
+        const predictedClass = labelClasses[predictedClassIndex];
+        console.log(predictedClass);
+        alert(`Predicted class: ${predictedClass}`);
+      })();
+    </script>
+    <style>
+      * {
+        font-family: Avenir, Arial, Helvetica, sans-serif;
+      }
+      #main_script {
+        display: block;
+        white-space: pre;
+        font-family: monospace;
+      }
+      #main_script:hover,
+      #main_script:focus {
+        background: #dff1f7;
+      }
+      #stay_up_top {
+        position: sticky;
+        top: 0;
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+    <script>
+      document.querySelector("#re_run").addEventListener("click", () => {
+        eval(document.querySelector("#main_script").innerText);
+      });
+    </script>
+  </body>
+</html>
