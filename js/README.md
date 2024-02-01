@@ -4,6 +4,10 @@ Run models in the browser.
 
 <https://www.tensorflow.org/js>
 
+## minimal tfjs (TensorFlow.js) demo
+
+https://codepen.io/hchiam/pen/yLwKJOZ?editors=1011
+
 ## Text Similarity Test
 
 [GitHub code with link to CodePen demo](https://github.com/hchiam/text-similarity-test)
