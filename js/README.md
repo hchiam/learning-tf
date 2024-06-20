@@ -32,9 +32,9 @@ https://github.com/hchiam/learning-tfjs-tsne
 
 [Demo](https://codepen.io/hchiam/pen/LYYRLzz) based on a [smashingmagazine.com blogtutorial](https://www.smashingmagazine.com/2019/09/machine-learning-front-end-developers-tensorflowjs).
 
-https://github.com/hchiam/Image-Captioning-TensorFlowjs
+Image alt text test: https://github.com/hchiam/Image-Captioning-TensorFlowjs
 
-https://github.com/hchiam/learning-tf/tree/main/js/mobilenet-image-prediction
+Image prediction: https://github.com/hchiam/learning-tf/tree/main/js/mobilenet-image-prediction
 
 ## Object Detection with a **Chrome Extension**
 
