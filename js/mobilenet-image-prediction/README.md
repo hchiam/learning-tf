@@ -1,0 +1,1 @@
+# `mobilenet` image prediction demo
