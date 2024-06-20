@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobilenet demo - BUT OFFLINE</title>
+    <style>
+      img {
+        max-width: min(90vw, 500px);
+        display: block;
+        margin-block: 1rem;
+      }
+      pre {
+        background: lightgreen;
+      }
+      pre:empty {
+        background: pink;
+      }
+      pre:empty:has(+ img[src^="blob"]):before {
+        content: "Predicting image...";
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      <code>mobilenet</code> demo - <strong><i>BUT OFFLINE</i></strong>
+    </h1>
+    <label>
+      Select an image file to process:
+      <input id="input" type="file" accept="image/png, image/jpeg" />
+    </label>
+    <pre id="pre"></pre>
+    <img id="img" />
+    <script>
+      input.addEventListener("change", () => {
+        if (img.firstChild) {
+          img.removeChild(preview.firstChild);
+        }
+        if (!input.files.length) return;
+        const file = input.files[0];
+        img.src = URL.createObjectURL(file);
+        img.title = file.name;
+        img.alt = file.name;
+        pre.innerText = "";
+        predictImage(img);
+      });
+
+      function predictImage(img) {
+        console.log("mobilenet", mobilenet);
+        mobilenet.load().then((model) => {
+          model.classify(img).then((predictions) => {
+            console.log("Predictions: ");
+            console.table(predictions);
+            pre.innerText = predictions
+              .map((p) => {
+                const prob = String(Math.round(p.probability * 100 * 10) / 10);
+                const name = p.className;
+                console.log("prob", prob);
+                return `${prob.padStart(5)}% : ${name}`;
+              })
+              .join("\n");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

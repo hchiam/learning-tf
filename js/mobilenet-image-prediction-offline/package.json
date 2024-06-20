@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "start": "vite"
+  }
+}
